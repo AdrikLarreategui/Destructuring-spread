@@ -113,8 +113,7 @@ function combineTwoArrays(array1, array2) {
   return [...array1, ...array2];
 }
 
-// Ejemplo de uso:
 const arrayNumero1 = [1, 3, 5];
-const arraynumero2 = [2, 4, 6];
-const resultado = combineTwoArrays(array1, array2);
-console.log(resultado); // Esto imprimirá [1, 2, 3, 4, 5, 6]
+const arrayNumero2 = [2, 4, 6];
+const resultado = combineTwoArrays(arrayNumero1, arrayNumero2);
+console.log(resultado); 
