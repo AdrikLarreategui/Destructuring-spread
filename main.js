@@ -74,4 +74,33 @@ const pikachu = {
 
 const mergearbichos = {...pokemon, ...pikachu};
 
-console.log(mergearbichos);
+//console.log(mergearbichos);
+
+
+//Ejercicio suma números
+
+function sumAllNumbers(...numeros) {
+  return numeros.reduce((acumulador, numero) => acumulador + numero, 0);
+}
+const suma = sumAllNumbers(7,4,1)
+//console.log(suma)
+
+
+//Ejercicio suma solo números
+
+function addOnlyNums(...argumentos) {
+  return argumentos
+    .filter(argumentos => typeof argumentos === 'number')
+    .reduce((total, num) => total + num, 0);
+}
+
+const soloNumeros = addOnlyNums(1, " ", 3, "4", 5, "abc");
+//console.log(soloNumeros); 
+
+// Ejercicio contar argumentos
+
+function countTheArgs(...arguments) {
+  return arguments.length
+}
+const countingArguments = countTheArgs(1, " ", 3, "4", 5, "abc")
+//console.log(countingArguments)
