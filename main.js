@@ -14,7 +14,7 @@ const empleados = [
 const empleado1 = empleados.find(empleado => empleado.email ="Luis@gmail.com")
 if(empleado1) {
   const { email } = empleado1;
-  const empleado1ConEmail = { email}
+  const empleado1ConEmail = { email }
   console.log(JSON.stringify(empleado1ConEmail))
 }
 
