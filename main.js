@@ -1,4 +1,4 @@
-// Ejercicio destructuring empleados
+//  ---> Ejercicio destructuring empleados
 
 const empleados = [
   { name: "Luis", email: "Luis@gmail.com" },
@@ -21,7 +21,7 @@ if(empleado1) {
 }
 
  
-//Ejercicio destructuring Pokemon
+//  ---> Ejercicio destructuring Pokemon
 
 const pokemon = {
   name: "Bulbasaur",
@@ -51,7 +51,7 @@ const [ Tackle ] = moves;
 
 
 
-//Ejercicio mergear Pokemon:
+//  ---> Ejercicio mergear Pokemon:
 
 
 const pikachu = {
@@ -77,7 +77,7 @@ const mergearbichos = {...pokemon, ...pikachu};
 //console.log(mergearbichos);
 
 
-//Ejercicio suma números
+//  ---> Ejercicio suma números
 
 function sumAllNumbers(...numeros) {
   return numeros.reduce((acumulador, numero) => acumulador + numero, 0);
@@ -86,7 +86,7 @@ const suma = sumAllNumbers(7,4,1)
 //console.log(suma)
 
 
-//Ejercicio suma solo números
+//  ---> Ejercicio suma solo números
 
 function addOnlyNums(...argumentos) {
   return argumentos
@@ -97,10 +97,24 @@ function addOnlyNums(...argumentos) {
 const soloNumeros = addOnlyNums(1, " ", 3, "4", 5, "abc");
 //console.log(soloNumeros); 
 
-// Ejercicio contar argumentos
+
+// ---> Ejercicio contar argumentos
 
 function countTheArgs(...arguments) {
   return arguments.length
 }
 const countingArguments = countTheArgs(1, " ", 3, "4", 5, "abc")
 //console.log(countingArguments)
+
+
+//  ---> Ejercicio combine Two Arrays
+
+function combineTwoArrays(array1, array2) {
+  return [...array1, ...array2];
+}
+
+// Ejemplo de uso:
+const arrayNumero1 = [1, 3, 5];
+const arraynumero2 = [2, 4, 6];
+const resultado = combineTwoArrays(array1, array2);
+console.log(resultado); // Esto imprimirá [1, 2, 3, 4, 5, 6]
